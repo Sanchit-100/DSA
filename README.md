@@ -7,9 +7,9 @@ arranged in folders.
 
 Might be of help to beginners in DSA
 
-Writtn in C++
+Written in C++
 
 ## Installation and Usage
 
-'git clone https://github.com/Sanchit-100/DSA.git'
+`git clone https://github.com/Sanchit-100/DSA.git`
 
