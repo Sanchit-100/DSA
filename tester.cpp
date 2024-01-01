@@ -1,18 +1,31 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int main(){
-    
-    vector<vector<int>> v;
-    for(int i=0;i<3;i++){
-        vector<int> v1={0};
-        v.push_back(v1);
+int removeDuplicates(vector<int> &nums)
+{
+    int i = 1;
+    while (nums.size() >= i)
+    {
+        if (nums[i] == nums[i - 1])
+        {
+            nums.erase(nums.begin() + i);
+        }
+        else
+            i++;
     }
 
-    cout<<v[2][0]<<endl;
-
+    return nums.size();
 }
 
+    int main()
+    {
 
+        vector<int> nums = {0, 0, 1, 1, 1, 2, 2};
+        removeDuplicates(nums);
 
+        for (int i = 0; i < nums.size(); i++)
+        {
+            cout << nums[i] << " ";
+        }
+    }
