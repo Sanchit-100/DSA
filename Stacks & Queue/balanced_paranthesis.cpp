@@ -22,7 +22,7 @@ bool isBalanced(string str){
         }
     }
 
-    if(stk.empty() and flag==0) return 1;
+    if(stk.empty() && flag==0) return 1;
     else return 0;
 
 
