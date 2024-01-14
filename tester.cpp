@@ -1,31 +1,19 @@
-#include <iostream>
-#include <vector>
+#include<iostream>
 using namespace std;
 
-int removeDuplicates(vector<int> &nums)
-{
-    int i = 1;
-    while (nums.size() >= i)
-    {
-        if (nums[i] == nums[i - 1])
-        {
-            nums.erase(nums.begin() + i);
-        }
-        else
-            i++;
+int main(){
+    int* arr=new int[256];
+    arr ['a']=13;
+    arr['b']=12;
+    for(int i=0;i<256;i++){
+        arr[i]=0;
     }
 
-    return nums.size();
+    cout<<arr['a']<<endl;
+    cout<<arr[97]<<endl;
+    cout<<arr[98]<<endl;
+    // cout<<arr[16]<<endl;
+
+
+    return 0;
 }
-
-    int main()
-    {
-
-        vector<int> nums = {0, 0, 1, 1, 1, 2, 2};
-        removeDuplicates(nums);
-
-        for (int i = 0; i < nums.size(); i++)
-        {
-            cout << nums[i] << " ";
-        }
-    }
